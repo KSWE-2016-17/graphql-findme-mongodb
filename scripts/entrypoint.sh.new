@@ -1,0 +1,8 @@
+#!/bin/bash
+
+mongod --fork --logpath /data/mongo.log
+
+[ -x /mongoimport-import-collections.sh ] \
+    && /mongoimport-import-collections.sh \
+    && chmod -x /mongoimport-import-collections.sh
+exec tail -f /dev/null
