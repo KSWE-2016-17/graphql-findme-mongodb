@@ -3,7 +3,7 @@
 chown -R mongodb:mongodb /data
 gosu mongodb mongod --fork --logpath /data/mongo.log
 
-[ -x /mongoimport-import-collections.sh ] \
-    && /mongoimport-import-collections.sh \
-    && chmod -x /mongoimport-import-collections.sh
+[ -x /mongodb-init-db.sh ] \
+    && /mongodb-init-db.sh \
+    && chmod -x /mongodb-init-db.sh
 exec tail -f /dev/null
