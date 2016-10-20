@@ -1,6 +1,7 @@
 #!/bin/bash
 
-mongod --fork --logpath /data/mongo.log
+chown -R mongodb:mongodb /data
+gosu mongodb mongod --fork --logpath /data/mongo.log
 
 [ -x /mongoimport-import-collections.sh ] \
     && /mongoimport-import-collections.sh \
