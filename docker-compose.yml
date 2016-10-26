@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+    mongodb:
+        image: my-mongo
+        container_name: my-mongo-01
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - "27017:27017"
