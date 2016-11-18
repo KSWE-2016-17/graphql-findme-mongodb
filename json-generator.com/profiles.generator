@@ -1,0 +1,28 @@
+[
+  '{{repeat(10, 10)}}',
+  {
+    _id: '{{objectId()}}',
+    aboutme: '',
+    children: '{{integer(0, 5)}}',
+    email: '{{email()}}',
+    eyecolor: '{{integer(0, 2)}}',
+    haircolor: '{{integer(0, 3)}}',
+    familystatus: '{{integer(0, 2)}}',
+    figure: '{{integer(0, 2)}}',
+    firstname: '{{firstName()}}',
+    lastname: '{{surname()}}',
+    profilepic: '',
+    gender: '{{integer(0, 1)}}',
+    birthday: '{{date()}}',
+    privacy: {
+      friends: '{{integer(0, 2)}}',
+      pictures: '{{integer(0, 2)}}'
+    },
+    user_id: '{{random("582f029c43e32e894ddd9ecf", "582f029ca9c8735f05876b77", "582f029c4bd7def40c77a6e8", "582f029c643c50004bd3e219", "582f029c04ee4cf3d2578191", "582f029cfc53ce30b030ea55", "582f029cf77a29031c2202c1", "582f029ca23f0bf77be314cf", "582f029c2b1332294ccdc27f")}}',
+    friends_ids: [
+      '{{repeat()}}',
+      '{{random("582f029c43e32e894ddd9ecf", "582f029ca9c8735f05876b77", "582f029c4bd7def40c77a6e8", "582f029c643c50004bd3e219", "582f029c04ee4cf3d2578191", "582f029cfc53ce30b030ea55", "582f029cf77a29031c2202c1", "582f029ca23f0bf77be314cf", "582f029c2b1332294ccdc27f")}}'
+    ]
+  }
+]
+

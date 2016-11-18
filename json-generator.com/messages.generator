@@ -1,0 +1,15 @@
+[
+  '{{repeat(5, 50)}}',
+  {
+    _id: '{{objectId()}}',
+    from_id: '{{random("582f07f606defae3e9986910", "582f07f6221e5b33ad3e21fc", "582f07f65f8af3638c609e4a", "582f07f6a3cda43e12aec8ec", "582f07f6be601f9da5a6f4b1", "582f07f621fca8a5b3dc72f5", "582f07f6a4a13f42be1c1893", "582f07f615a70a1d9d158783", "582f07f65008c1f852e8ce30", "582f07f6e0cd63b19ec89664")}}',
+    to_id: '{{random("582f07f606defae3e9986910", "582f07f6221e5b33ad3e21fc", "582f07f65f8af3638c609e4a", "582f07f6a3cda43e12aec8ec", "582f07f6be601f9da5a6f4b1", "582f07f621fca8a5b3dc72f5", "582f07f6a4a13f42be1c1893", "582f07f615a70a1d9d158783", "582f07f65008c1f852e8ce30", "582f07f6e0cd63b19ec89664")}}',
+    title: '{{lorem()}}',
+    content: '{{lorem(5)}}',
+    archivedFrom: '{{bool()}}',
+    archivedTo: '{{bool()}}',
+    deletedFrom: '{{bool()}}',
+    deletedTo: '{{bool()}}'
+  }
+]
+

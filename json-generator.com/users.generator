@@ -1,0 +1,10 @@
+[
+  '{{repeat(10, 10)}}',
+  {
+    _id: '{{objectId()}}',
+    login: '{{firstName()}}{{surname()}}',
+    password: 'foobar',
+    role: '{{random(0, 2)}}'
+  }
+]
+
