@@ -1,7 +1,5 @@
 FROM mongo
 
-LABEL authors="Alexej Esau <alexej.esau@fh-bielefeld.de>, Ruben Gees <ruben.gees@fh-bielefeld.de>"
-
 RUN apt-get update && \
     apt-get install -y dos2unix
 
