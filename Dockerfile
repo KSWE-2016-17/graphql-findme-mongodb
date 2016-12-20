@@ -1,7 +1,9 @@
 FROM mongo
 
 RUN apt-get update && \
-    apt-get install -y dos2unix
+    apt-get install -y \
+        dos2unix && \
+        rm -rf /var/lib/apt/lists/*
 
 COPY dumps/ /dumps/
 RUN for db in /dumps/* ; do \
