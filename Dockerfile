@@ -16,9 +16,9 @@ COPY scripts/entrypoint.sh.orig /
 RUN dos2unix /entrypoint.sh.orig
 
 COPY scripts/entrypoint.sh.new /entrypoint.sh
-RUN chmod +x /entrypoint.sh
-RUN dos2unix /entrypoint.sh
+RUN chmod +x /entrypoint.sh && \
+    dos2unix /entrypoint.sh
 
 COPY scripts/mongodb-init-db.sh /
-RUN chmod +x /mongodb-init-db.sh
-RUN dos2unix /mongodb-init-db.sh
+RUN chmod +x /mongodb-init-db.sh && \
+    dos2unix /mongodb-init-db.sh
