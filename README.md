@@ -17,6 +17,11 @@ If this is the case and the usage of the existing instance is watend,
 use `mongorestore` tool to import the database dumps.
 Otherwise use the manual afterwards.
 
+## Prerequisites
+
+- [Docker Engine v1.12+](https://docs.docker.com/engine/installation/)
+- [Docker Compose v1.9+](https://docs.docker.com/compose/install/)
+
 ## Using docker-compose
 
 ```bash
