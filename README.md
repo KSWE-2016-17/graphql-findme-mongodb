@@ -1,4 +1,4 @@
-# MongoDB for FindMe Backend
+# MongoDB for find.me Backend
 
 **THIS IS FOR TESTING AND DEVELOPING PURPOSES ONLY!!!**
 
